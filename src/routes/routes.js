@@ -10,4 +10,4 @@ export const home = Loadable({
 export const award = Loadable({
     loader:() => import("../components/Award"),
     loading: Loading
-});
+}); 
