@@ -16,7 +16,7 @@
 * {
   margin: 0;
   border: 0;
-  margin: 0;
+  padding: 0;
   font-family: brandonFont;
 }
 
@@ -34,7 +34,7 @@
 
 .fa > div {
   height: 71vh;
-  margin: 0 3vw;
+  margin: 0 7vh;
   margin-top: 20vh;
 }
 
@@ -44,8 +44,13 @@
   animation: botup 1s;
 }
 
-.fa_big_hulb_section > img {
+#big_hulb {
   height: 70vh;
+  filter: grayscale(100%);
+}
+
+.light_it_up {
+  filter: none !important;
 }
 
 .fa_content_section {
@@ -97,7 +102,7 @@
 }
 
 .fa_lorem {
-  margin-top: 2vw;
+  margin-top: 2vh;
   font-size: 1.25vw;
   animation: slide_right 1s;
   animation-delay: 1s;

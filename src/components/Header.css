@@ -1,0 +1,33 @@
+.fixed_header {
+  position: fixed;
+  width: 100%;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2) 60%, rgba(255, 255, 255, 0.05));
+}
+
+.fixed_header img {
+  height: 7vh;
+  margin: 2vh 5vw;
+  /* position: absolute;
+  top: 2vh;
+  left: 5vw; */
+}
+
+.header_btn {
+  height: 3vw;
+  width: 13vw;
+  font-size: 2vw;
+  border-radius: 50px;
+  transition: 0.5s;
+  background-size: 200% auto;
+  background-image: linear-gradient(to right, #f9d832, #ffffff, #f6d365 100%);
+  float: right;
+  margin: 2.5vh 5vw 0vh 0vw;
+  /* position: absolute;
+  top: 4vh;
+  right: 5vw; */
+}
+
+.header_btn:hover {
+  cursor: pointer;
+  background-position: right;
+}
