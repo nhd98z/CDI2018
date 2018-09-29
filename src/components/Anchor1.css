@@ -1,0 +1,168 @@
+@font-face {
+  font-family: brandonFont;
+  src: url('../fonts/icielBrandonText-Bold.ttf');
+}
+
+@font-face {
+  font-family: festerFont;
+  src: url('../fonts/Fester_Bold.otf');
+}
+
+@font-face {
+  font-family: effraFont;
+  src: url('../fonts/iCielEffra-Regular.otf');
+}
+
+* {
+  margin: 0;
+  border: 0;
+  margin: 0;
+  font-family: brandonFont;
+}
+
+.fa_background {
+  background: url('../images/Background.png');
+  background-size: cover;
+  height: 100vh;
+}
+
+.fa {
+  display: flex;
+  justify-content: center;
+  width: 90vw;
+}
+
+.fa > div {
+  height: 71vh;
+  margin: 0 3vw;
+  margin-top: 20vh;
+}
+
+.fa_big_hulb_section {
+  /* background: red; */
+  width: 24vw;
+  animation: botup 1s;
+}
+
+.fa_big_hulb_section > img {
+  height: 70vh;
+}
+
+.fa_content_section {
+  /* background: blue; */
+  width: 43vw;
+}
+
+.fa_content_section {
+  color: #ffffff;
+}
+
+.fa_content_section span {
+  color: #f9d832;
+}
+
+.fa_number,
+.fa_number > span {
+  font-size: 6vw;
+  margin-top: 2vh;
+  font-family: festerFont;
+  animation: botup 1s;
+  opacity: 0;
+  animation-fill-mode: forwards;
+}
+
+.fa_nyt {
+  font-size: 6vw;
+  text-transform: uppercase;
+  animation: slide_right 1s;
+  animation-delay: 1s;
+  opacity: 0;
+  animation-fill-mode: forwards;
+}
+
+.fa_vsl {
+  font-size: 3vw;
+  text-transform: uppercase;
+  animation: topdown 1s;
+  opacity: 0;
+  animation-fill-mode: forwards;
+}
+
+.fa_ngaygio {
+  margin-left: 0.25vw;
+  font-size: 1.5vw;
+  animation: botup 1s;
+  opacity: 0;
+  animation-fill-mode: forwards;
+}
+
+.fa_lorem {
+  margin-top: 2vw;
+  font-size: 1.25vw;
+  animation: slide_right 1s;
+  animation-delay: 1s;
+  opacity: 0;
+  animation-fill-mode: forwards;
+  font-family: effraFont;
+}
+
+.fa_btn {
+  height: 5vw;
+  width: 20vw;
+  font-size: 2vw;
+  margin-top: 4vh;
+  border-radius: 50px;
+  transition: 0.5s;
+  background-size: 200% auto;
+  background-image: linear-gradient(to right, #f9d832, #ffffff, #f6d365 100%);
+  animation: botup 1s;
+}
+
+.fa_btn:hover {
+  cursor: pointer;
+  background-position: right;
+}
+
+@keyframes topdown {
+  from {
+    opacity: 0;
+    transform: translate3d(0px, -100px, 0px);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes botup {
+  from {
+    opacity: 0;
+    transform: translate3d(0px, 100px, 0px);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes slide_left {
+  from {
+    opacity: 0;
+    transform: translate3d(-200px, 0px, 0px);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes slide_right {
+  from {
+    opacity: 0;
+    transform: translate3d(+200px, 0px, 0px);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
