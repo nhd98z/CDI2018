@@ -8,6 +8,6 @@ export const home = Loadable({
     loading: Loading
 });
 export const award = Loadable({
-    loader:() => import("../components/Award"),
+    loader:() => import("../components/Anchor3"),
     loading: Loading
 }); 

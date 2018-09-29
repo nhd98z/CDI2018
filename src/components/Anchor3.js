@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import "./Award.css";
+import "./Anchor3.css";
 import "../../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import cash from "../images/Screen 3/Money.png";
 import TechKidsScholarship from "../images/Screen 3/TechKidsScholarship.png";
@@ -100,7 +100,7 @@ export default class Award extends Component {
 
   render() {
     return (
-      <div className="award col-md-12 container">
+      <div className="award col-md-12">
         <div className="row">
           <div className="col-md-1" />
           <div className="award-brand col-md-10 row">
