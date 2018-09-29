@@ -1,7 +1,7 @@
 @font-face {
   font-family: BrandonText;
   src: url("../asset/icielBrandonText-Bold.ttf");
-  font-weight: 300;
+
 }
 @font-face {
   font-family: iCielEffra;
@@ -21,19 +21,12 @@
 .award-brand {
   left:auto;
   font-family: BrandonText;
-  font-size: 48px;
+  font-size: 7vh;
   font-weight: 600;
   /* width: 100%; */
-  -webkit-animation: fadeinTop 1s; /* Safari, Chrome and Opera > 12.1 */
-  -moz-animation: fadeinTop 1s; /* Firefox < 16 */
-  -ms-animation: fadeinTop 1s; /* Internet Explorer */
-  -o-animation: fadeinTop 1s; /* Opera < 12.1 */
-  animation: fadeinTop 1s;
 }
 
 .award-content-left {
-  padding-left: 20px;
-  padding-right: 20px;
   font-family: BrandonText;
   /* height: 100%; */
   vertical-align: middle;
@@ -42,25 +35,32 @@
 /* award summary */
 .award-sumary {
   font-family: BrandonText;
-  margin-top: 60px;
+  margin-top: 10vh;
+  /* -webkit-animation: fadeinTop 1s;
+  -moz-animation: fadeinTop 1s; 
+  -ms-animation: fadeinTop 1s; 
+  -o-animation: fadeinTop 1s; 
+  animation: fadeinTop 1s; 
+  */
+  transform: opacity 300ms ease-in;
 }
 .award-sumary-title {
   color: #ecce31;
-  font-size: 32px;
+  font-size: 5vh;
   font-weight: 600;
   /* width: 100%; */
 }
 
 .award-sumary-money {
   font-family: BrandonText;
-  font-size: 60px;
+  font-size: 10vh;
   font-weight: 600;
   /* width: 100%; */
 }
 
 /* button */
 .award-prize {
-  margin-top: 30px;
+  margin-top: 5vh;
   /* width: 100%; */
 }
 
@@ -71,52 +71,38 @@
 }
 .prize-sumary {
   font-family: BrandonText;
-  margin-top: 10px;
-  -webkit-animation: fadeinBottom 1s; /* Safari, Chrome and Opera > 12.1 */
-  -moz-animation: fadeinBottom 1s; /* Firefox < 16 */
-  -ms-animation: fadeinBottom 1s; /* Internet Explorer */
-  -o-animation: fadeinBottom 1s; /* Opera < 12.1 */
-  animation: fadeinBottom 1s;
+  margin-top: 2vh;
+
 }
+
 .prize-sumary-title {
   font-family: BrandonText;
   color: #ecce31;
-  font-size: 16px;
+  font-size: 2vh;
   font-weight: 600;
   /* width: 100%; */
 }
 
 .prize-sumary-money {
   font-family: BrandonText;
-  font-size: 20px;
+  font-size: 3vh;
   font-weight: 600;
   /* width: 100%; */
-  -webkit-animation: fadeinBottom 1s; /* Safari, Chrome and Opera > 12.1 */
-  -moz-animation: fadeinBottom 1s; /* Firefox < 16 */
-  -ms-animation: fadeinBottom 1s; /* Internet Explorer */
-  -o-animation: fadeinBottom 1s; /* Opera < 12.1 */
-  animation: fadeinBottom 1s;
+
 }
 
 /* award content right */
 .award-content-right {
-  padding-left: 20px;
-  padding-right: 20px;
   font-family: BrandonText;
   vertical-align: middle;
 }
 
 .award-item {
-  font-size: 24px;
-  -webkit-animation: fadeinRight 1s; /* Safari, Chrome and Opera > 12.1 */
-  -moz-animation: fadeinRight 1s; /* Firefox < 16 */
-  -ms-animation: fadeinRight 1s; /* Internet Explorer */
-  -o-animation: fadeinRight 1s; /* Opera < 12.1 */
-  animation: fadeinRight 1s;
+  font-size: 4vh;
 }
 
 .award-item span {
-  font-size: 16px;
+  font-size: 2vh;
 }
 
 /* animation */
@@ -126,22 +112,22 @@
 @keyframes fadeinTop {
   from {
     opacity: 0;
-    top: -50px;
+    top: -5vh;
   }
   to {
     opacity: 1;
-    top: 0px;
+    top: 0vh;
   }
 }
 
 @-moz-keyframes fadeinTop {
   from {
     opacity: 0;
-    top: -50px;
+    top: -5vh;
   }
   to {
     opacity: 1;
-    top: 0px;
+    top: 0vh;
   }
 }
 
@@ -149,11 +135,11 @@
 @-webkit-keyframes fadeinTop {
   from {
     opacity: 0;
-    top: -50px;
+    top: -5vh;
   }
   to {
     opacity: 1;
-    top: 0px;
+    top: 0vh;
   }
 }
 
@@ -161,11 +147,11 @@
 @-ms-keyframes fadeinTop {
   from {
     opacity: 0;
-    top: -50px;
+    top: -5vh;
   }
   to {
     opacity: 1;
-    top: 0px;
+    top: 0vh;
   }
 }
 
@@ -173,11 +159,11 @@
 @-o-keyframes fadeinTop {
   from {
     opacity: 0;
-    top: -50px;
+    top: -5vh;
   }
   to {
     opacity: 1;
-    top: 0px;
+    top: 0vh;
   }
 }
 
@@ -299,4 +285,89 @@
     opacity: 1;
     right: 0px;
   }
+}
+
+/* fade in left */
+
+@keyframes fadeinLeft {
+  from {
+    opacity: 0;
+    left: -50px;
+  }
+  to {
+    opacity: 1;
+    left: 0px;
+  }
+}
+
+@-moz-keyframes fadeinLeft {
+  from {
+    opacity: 0;
+    left: -50px;
+  }
+  to {
+    opacity: 1;
+    left: 0px;
+  }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadeinLeft {
+  from {
+    opacity: 0;
+    left: -50px;
+  }
+  to {
+    opacity: 1;
+    left: 0px;
+  }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadeinLeft {
+  from {
+    opacity: 0;
+    left: -50px;
+  }
+  to {
+    opacity: 1;
+    left: 0px;
+  }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes fadeinLeft {
+  from {
+    opacity: 0;
+    left: -50px;
+  }
+  to {
+    opacity: 1;
+    left: 0px;
+  }
+}
+
+.fade-in-bottom{
+  -webkit-animation: fadeinBottom 1s; /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadeinBottom 1s; /* Firefox < 16 */
+  -ms-animation: fadeinBottom 1s; /* Internet Explorer */
+  -o-animation: fadeinBottom 1s; /* Opera < 12.1 */
+  animation: fadeinBottom 1s;
+}
+
+
+.fade-in-top{
+  -webkit-animation: fadeinTop 1s; /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadeinTop 1s; /* Firefox < 16 */
+  -ms-animation: fadeinTop 1s; /* Internet Explorer */
+  -o-animation: fadeinTop 1s; /* Opera < 12.1 */
+  animation: fadeinTop 1s;
+}
+
+.fade-in-right{
+  -webkit-animation: fadeinRight 1s; /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadeinRight 1s; /* Firefox < 16 */
+  -ms-animation: fadeinRight 1s; /* Internet Explorer */
+  -o-animation: fadeinRight 1s; /* Opera < 12.1 */
+  animation: fadeinRight 1s;
 }

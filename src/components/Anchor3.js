@@ -10,6 +10,7 @@ export default class Award extends Component {
   constructor(props) {
     super(props);
     this.state = {
+      key:0,
       firstActive: true,
       secondActive: false,
       thirdActive: false,
@@ -24,6 +25,7 @@ export default class Award extends Component {
   }
 
   firstPrize = () => {
+    const key=1;
     const firstActive = true;
     const secondActive = false;
     const thirdActive = false;
@@ -49,6 +51,7 @@ export default class Award extends Component {
   };
 
   secondPrize = () => {
+    const key=2;
     const firstActive = false;
     const secondActive = true;
     const thirdActive = false;
@@ -74,6 +77,7 @@ export default class Award extends Component {
   };
 
   thirdPrize = () => {
+    const key=3;
     const firstActive = false;
     const secondActive = false;
     const thirdActive = true;
@@ -103,34 +107,26 @@ export default class Award extends Component {
       <div className="award col-md-12">
         <div className="row">
           <div className="col-md-1" />
-          <div className="award-brand col-md-10 row">
+          <div className="award-brand col-md-10 row fade-in-top" >
             <u>GIẢI THƯỞNG</u>
           </div>
+          <div className="col-md-1" />  
           <div className="col-md-1" />
-          <div className="col-md-1" />
-          <div className="award-content col-md-10 row">
-            <div className="award-content-left col-md-6 ">
+          <div key={this.state.sumaryTitle} className="award-content col-md-10 row">
+            <div  className="award-content-left col-md-6 ">
               <div className="row">
-                <div className="award-sumary ">
-                  <div className="award-sumary-title">
-                    {this.state.sumaryTitle}
-                  </div>
-                  <div className="award-sumary-money">
-                    {this.state.sumaryMoney}
-                    <span style={{ fontSize: "30px" }}>VND</span>{" "}
-                  </div>
-                </div>
+                <AwardSumary sumaryMoney = {this.state.sumaryMoney} sumaryTitle={this.state.sumaryTitle}/>
                 <div className="award-prize row">
-                  <div className="col-md-12 text-center" style={{color:"#FFFFFF",fontSize:"26px"}}>Chọn để xem các giải thưởng</div>
+                  <div className="col-md-12 text-center" style={{color:"#FFFFFF",fontSize:"4vh"}}>Chọn để xem các giải thưởng</div>
                   <div
                     className="award-prize-content col-md-4"
                     style={this.state.firstActive ? {opacity:"0.5"}:{}}
                     onClick ={() => this.firstPrize()}
                   >
-                    <div className="prize-sumary text-center">
+                    <div className="prize-sumary text-center fade-in-top">
                       <div className="prize-sumary-title">GIẢI NHẤT</div>
                       <div className="prize-sumary-money">
-                        56,000,000 <span style={{ fontSize: "10px" }}>VND</span>{" "}
+                        56,000,000 <span style={{ fontSize: "2vh" }}>VND</span>{" "}
                       </div>
                     </div>
                   </div>
@@ -139,10 +135,10 @@ export default class Award extends Component {
                     style={this.state.secondActive ? {opacity:"0.5"}:{}}
                     onClick ={() => this.secondPrize()}
                   >
-                    <div className="prize-sumary text-center">
+                    <div className="prize-sumary text-center fade-in-top">
                       <div className="prize-sumary-title">GIẢI NHÌ</div>
                       <div className="prize-sumary-money">
-                        32,000,000 <span style={{ fontSize: "10px" }}>VND</span>{" "}
+                        32,000,000 <span style={{ fontSize: "2vh" }}>VND</span>{" "}
                       </div>
                     </div>
                   </div>
@@ -151,10 +147,10 @@ export default class Award extends Component {
                     style={this.state.thirdActive ? { opacity: "0.5" } : {}}
                     onClick ={() => this.thirdPrize()}
                   >
-                    <div className="prize-sumary text-center">
+                    <div className="prize-sumary text-center fade-in-top">
                       <div className="prize-sumary-title">2 GIẢI BA</div>
                       <div className="prize-sumary-money">
-                        15,000,000 <span style={{ fontSize: "10px" }}>VND</span>{" "}
+                        15,000,000 <span style={{ fontSize: "2vh" }}>VND</span>{" "}
                       </div>
                     </div>
                   </div>
@@ -169,19 +165,19 @@ export default class Award extends Component {
                     className="col-md-12 m-auto "
                     src={cash}
                     style={{
-                      width: "120px",
+                      width: "15vh",
                       display: "block",
                       marginLeft: "auto",
                       marginRight: "auto"
                     }}
                     alt=""
                   />
-                  <div className="col-md-12 m-auto">
+                  <div className="col-md-12 m-auto fade-in-right">
                     {this.state.cash}{" "}
-                    <span style={{ fontSize: "12px" }}>VND</span> <br />
+                    <span style={{ fontSize: "2vh" }}>VND</span> <br />
                     <span
                       className="col-md-12 m-auto"
-                      style={{ color: "#ffffff" }}
+                      style={{ color: "#ffffff",fontSize:"2.5vh" }}
                     >
                       Tiền mặt
                     </span>
@@ -193,20 +189,20 @@ export default class Award extends Component {
                     className="col-md-12 m-auto "
                     src={TechKidsScholarship}
                     style={{
-                      width: "120px",
+                      width: "15vh",
                       display: "block",
                       marginLeft: "auto",
                       marginRight: "auto"
                     }}
                     alt=""
                   />
-                  <div className="col-md-12 m-auto">
+                  <div className="col-md-12 m-auto fade-in-right">
                     {this.state.techkidScholarship}{" "}
-                    <span style={{ fontSize: "12px" }}>VND</span>
+                    <span style={{ fontSize: "2vh" }}>VND</span>
                     <br />
                     <span
                       className="col-md-12 m-auto"
-                      style={{ color: "#ffffff" }}
+                      style={{ color: "#ffffff",fontSize:"2.5vh" }}
                     >
                       5 học bổng {this.state.techkidScholarshipPercentage}%
                     </span>
@@ -217,22 +213,22 @@ export default class Award extends Component {
               <div className="row pb-4">
                 <div className="award-item col-md-6 text-center">
                   <img
-                    className="col-md-12 m-auto "
+                    className="col-md-12 m-auto"
                     src={TopCVAccount}
                     style={{
-                      width: "120px",
+                      width: "15vh",
                       display: "block",
                       marginLeft: "auto",
                       marginRight: "auto"
                     }}
                     alt=""
                   />
-                  <div className="col-md-12 m-auto">
+                  <div className="col-md-12 m-auto fade-in-right">
                     {this.state.topcvAccount}{" "}
-                    <span style={{ fontSize: "12px" }}>VND</span> <br />
+                    <span style={{ fontSize: "2vh" }}>VND</span> <br />
                     <span
                       className="col-md-12 m-auto"
-                      style={{ color: "#ffffff" }}
+                      style={{ color: "#ffffff",fontSize:"2.5vh" }}
                     >
                       5 tài khoản VIP TopCV
                     </span>
@@ -241,28 +237,30 @@ export default class Award extends Component {
 
                 <div className="award-item col-md-6 text-center">
                   <img
-                    className="col-md-12 m-auto "
+                    className="col-md-12 m-auto"
                     src={TopCVScholarship}
                     style={{
-                      width: "120px",
+                      width: "15vh",
                       display: "block",
                       marginLeft: "auto",
                       marginRight: "auto"
                     }}
                     alt=""
                   />
-                  <div className="col-md-12 m-auto">
+                  <div className="col-md-12 m-auto fade-in-right">
                     {this.state.topcvScholarship}{" "}
-                    <span style={{ fontSize: "12px" }}>VND</span> <br />
+                    <span style={{ fontSize: "2vh" }}>VND</span> <br />
                     <span
                       className="col-md-12 m-auto"
-                      style={{ color: "#ffffff" }}
+                      style={{ color: "#ffffff",fontSize:"2.5vh" }}
                     >
                       5 khóa học của TopCV
                     </span>
                   </div>
                 </div>
               </div>
+              <div className="col-md-12 text-center"
+              style={{ color: "#ffffff",fontSize:"3vh"}}>và các phần quà có giá trị khác</div>
             </div>
           </div>
 
@@ -270,5 +268,21 @@ export default class Award extends Component {
         </div>
       </div>
     );
+  }
+}
+
+class AwardSumary extends Component{
+  render(){
+    return(
+      <div className="award-sumary fade-in-top">
+                  <div className="award-sumary-title">
+                    {this.props.sumaryTitle}
+                  </div>
+                  <div className="award-sumary-money">
+                    {this.props.sumaryMoney}
+                    <span style={{ fontSize: "5vh" }}>VND</span>{" "}
+                  </div>
+                </div>
+    )
   }
 }
