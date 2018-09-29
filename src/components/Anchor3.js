@@ -6,11 +6,11 @@ import TechKidsScholarship from "../images/Screen 3/TechKidsScholarship.png";
 import TopCVAccount from "../images/Screen 3/TopCVAccount.png";
 import TopCVScholarship from "../images/Screen 3/TopCVScholarship.png";
 
+
 export default class Award extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      key:0,
       firstActive: true,
       secondActive: false,
       thirdActive: false,
@@ -25,7 +25,6 @@ export default class Award extends Component {
   }
 
   firstPrize = () => {
-    const key=1;
     const firstActive = true;
     const secondActive = false;
     const thirdActive = false;
@@ -51,7 +50,6 @@ export default class Award extends Component {
   };
 
   secondPrize = () => {
-    const key=2;
     const firstActive = false;
     const secondActive = true;
     const thirdActive = false;
@@ -77,7 +75,6 @@ export default class Award extends Component {
   };
 
   thirdPrize = () => {
-    const key=3;
     const firstActive = false;
     const secondActive = false;
     const thirdActive = true;

@@ -1,12 +1,7 @@
 @font-face {
   font-family: BrandonText;
-<<<<<<< HEAD
-  src: url("../asset/icielBrandonText-Bold.ttf");
-
-=======
   src: url("../fonts/icielBrandonText-Bold.ttf");
   font-weight: 300;
->>>>>>> 32ca98d8deb6f23b90a465047b1a91cca5351fa0
 }
 @font-face {
   font-family: iCielEffra;

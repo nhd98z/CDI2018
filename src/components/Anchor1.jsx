@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 
 import './Anchor1.css';
 import light_bulb from '../images/bongden.png';
-import Header from './Header';
+
 
 const DEADLINE = '10/20/2018';
 
@@ -48,7 +48,7 @@ class App extends Component {
   render() {
     return (
       <aside>
-        <Header />
+
         <div className="fa_background">
           <div className="fa">
             <div className="fa_big_hulb_section">
