@@ -15,6 +15,7 @@ class App extends Component {
       minutes: 0,
       seconds: 0
     };
+    this.handleMouse = this.handleMouse.bind(this);
   }
 
   componentWillMount() {
@@ -39,6 +40,11 @@ class App extends Component {
     this.setState({ days, hours, minutes, seconds });
   }
 
+  handleMouse() {
+    console.log(document.getElementById('big_hulb').classList);
+    document.getElementById('big_hulb').classList.toggle('light_it_up');
+  }
+
   render() {
     return (
       <aside>
@@ -46,7 +52,7 @@ class App extends Component {
         <div className="fa_background">
           <div className="fa">
             <div className="fa_big_hulb_section">
-              <img src={light_bulb} alt="light_bulb" />
+              <img id="big_hulb" src={light_bulb} alt="light_bulb" />
             </div>
             <div className="fa_content_section row">
               <h2 className="fa_vsl">Vòng sơ loại</h2>
@@ -70,7 +76,7 @@ class App extends Component {
                 Giờ&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 Phút&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Giây
               </h3>
-              <input type="button" className="fa_btn" value="ĐĂNG KÝ NGAY" />
+              <input type="button" className="fa_btn" value="ĐĂNG KÝ NGAY" onMouseEnter={this.handleMouse} onMouseLeave={this.handleMouse}/>
             </div>
           </div>
         </div>

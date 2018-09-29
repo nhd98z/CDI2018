@@ -44,8 +44,13 @@
   animation: botup 1s;
 }
 
-.fa_big_hulb_section > img {
+#big_hulb {
   height: 70vh;
+  filter: grayscale(100%);
+}
+
+.light_it_up {
+  filter: none !important;
 }
 
 .fa_content_section {
