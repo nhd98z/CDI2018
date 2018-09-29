@@ -104,6 +104,7 @@
   opacity: 0;
   animation-fill-mode: forwards;
   font-family: effraFont;
+  line-height: 1.25vw !important;
 }
 
 .fa_btn {

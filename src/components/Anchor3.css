@@ -1,0 +1,302 @@
+@font-face {
+  font-family: BrandonText;
+  src: url("../asset/icielBrandonText-Bold.ttf");
+  font-weight: 300;
+}
+@font-face {
+  font-family: iCielEffra;
+  src: url("../asset/Effra_Std_Bd.ttf");
+}
+
+.award {
+  /* height: 100%; */
+  background-image: url("../images/Background.png");
+  background-size: cover;
+  color: #85eaab;
+  min-height: 100vh ;
+  padding-top: 20vh;
+
+}
+
+.award-brand {
+  left:auto;
+  font-family: BrandonText;
+  font-size: 48px;
+  font-weight: 600;
+  /* width: 100%; */
+  -webkit-animation: fadeinTop 1s; /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadeinTop 1s; /* Firefox < 16 */
+  -ms-animation: fadeinTop 1s; /* Internet Explorer */
+  -o-animation: fadeinTop 1s; /* Opera < 12.1 */
+  animation: fadeinTop 1s;
+}
+
+.award-content-left {
+  padding-left: 20px;
+  padding-right: 20px;
+  font-family: BrandonText;
+  /* height: 100%; */
+  vertical-align: middle;
+}
+
+/* award summary */
+.award-sumary {
+  font-family: BrandonText;
+  margin-top: 60px;
+}
+.award-sumary-title {
+  color: #ecce31;
+  font-size: 32px;
+  font-weight: 600;
+  /* width: 100%; */
+}
+
+.award-sumary-money {
+  font-family: BrandonText;
+  font-size: 60px;
+  font-weight: 600;
+  /* width: 100%; */
+}
+
+/* button */
+.award-prize {
+  margin-top: 30px;
+  /* width: 100%; */
+}
+
+.award-prize-content {
+  font-family: BrandonText;
+  cursor: pointer;
+  
+}
+.prize-sumary {
+  font-family: BrandonText;
+  margin-top: 10px;
+  -webkit-animation: fadeinBottom 1s; /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadeinBottom 1s; /* Firefox < 16 */
+  -ms-animation: fadeinBottom 1s; /* Internet Explorer */
+  -o-animation: fadeinBottom 1s; /* Opera < 12.1 */
+  animation: fadeinBottom 1s;
+}
+.prize-sumary-title {
+  font-family: BrandonText;
+  color: #ecce31;
+  font-size: 16px;
+  font-weight: 600;
+  /* width: 100%; */
+}
+
+.prize-sumary-money {
+  font-family: BrandonText;
+  font-size: 20px;
+  font-weight: 600;
+  /* width: 100%; */
+  -webkit-animation: fadeinBottom 1s; /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadeinBottom 1s; /* Firefox < 16 */
+  -ms-animation: fadeinBottom 1s; /* Internet Explorer */
+  -o-animation: fadeinBottom 1s; /* Opera < 12.1 */
+  animation: fadeinBottom 1s;
+}
+
+/* award content right */
+.award-content-right {
+  padding-left: 20px;
+  padding-right: 20px;
+  font-family: BrandonText;
+  vertical-align: middle;
+}
+
+.award-item {
+  font-size: 24px;
+  -webkit-animation: fadeinRight 1s; /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadeinRight 1s; /* Firefox < 16 */
+  -ms-animation: fadeinRight 1s; /* Internet Explorer */
+  -o-animation: fadeinRight 1s; /* Opera < 12.1 */
+  animation: fadeinRight 1s;
+}
+
+.award-item span {
+  font-size: 16px;
+}
+
+/* animation */
+
+/* Firefox < 16 */
+
+@keyframes fadeinTop {
+  from {
+    opacity: 0;
+    top: -50px;
+  }
+  to {
+    opacity: 1;
+    top: 0px;
+  }
+}
+
+@-moz-keyframes fadeinTop {
+  from {
+    opacity: 0;
+    top: -50px;
+  }
+  to {
+    opacity: 1;
+    top: 0px;
+  }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadeinTop {
+  from {
+    opacity: 0;
+    top: -50px;
+  }
+  to {
+    opacity: 1;
+    top: 0px;
+  }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadeinTop {
+  from {
+    opacity: 0;
+    top: -50px;
+  }
+  to {
+    opacity: 1;
+    top: 0px;
+  }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes fadeinTop {
+  from {
+    opacity: 0;
+    top: -50px;
+  }
+  to {
+    opacity: 1;
+    top: 0px;
+  }
+}
+
+/* fade in left */
+
+@keyframes fadeinBottom {
+  from {
+    opacity: 0;
+    bottom: 50px;
+  }
+  to {
+    opacity: 1;
+    bottom: 0px;
+  }
+}
+
+@-moz-keyframes fadeinBottom {
+  from {
+    opacity: 0;
+    bottom: -50px;
+  }
+  to {
+    opacity: 1;
+    bottom: 0px;
+  }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadeinBottom {
+  from {
+    opacity: 0;
+    bottom: -50px;
+  }
+  to {
+    opacity: 1;
+    bottom: 0px;
+  }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadeinBottom {
+  from {
+    opacity: 0;
+    bottom: -50px;
+  }
+  to {
+    opacity: 1;
+    bottom: 0px;
+  }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes fadeinBottom {
+  from {
+    opacity: 0;
+    bottom: -50px;
+  }
+  to {
+    opacity: 1;
+    bottom: 0px;
+  }
+}
+
+/* fade in right */
+
+@keyframes fadeinRight {
+  from {
+    opacity: 0;
+    right: -50px;
+  }
+  to {
+    opacity: 1;
+    right: 0px;
+  }
+}
+
+@-moz-keyframes fadeinRight {
+  from {
+    opacity: 0;
+    right: -50px;
+  }
+  to {
+    opacity: 1;
+    right: 0px;
+  }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadeinRight {
+  from {
+    opacity: 0;
+    right: -50px;
+  }
+  to {
+    opacity: 1;
+    right: 0px;
+  }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadeinRight {
+  from {
+    opacity: 0;
+    right: -50px;
+  }
+  to {
+    opacity: 1;
+    right: 0px;
+  }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes fadeinRight {
+  from {
+    opacity: 0;
+    right: -50px;
+  }
+  to {
+    opacity: 1;
+    right: 0px;
+  }
+}

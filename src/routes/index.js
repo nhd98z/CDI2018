@@ -6,7 +6,7 @@ import Anchor1 from '../components/Anchor1';
 export default (
   <Router>
     <Route path="/" component={home} />
-    <Route path="/award" component={award} />
+    <Route path="/3" component={award} />
     <Route path="/1" component={Anchor1} />
   </Router>
 );
