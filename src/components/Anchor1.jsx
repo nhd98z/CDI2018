@@ -42,7 +42,7 @@ class App extends Component {
   render() {
     return (
       <aside>
-        <Header showBtn={false} />
+        <Header />
         <div className="fa_background">
           <div className="fa">
             <div className="fa_big_hulb_section">
