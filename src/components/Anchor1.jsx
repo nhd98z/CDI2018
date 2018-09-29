@@ -4,7 +4,7 @@ import './Anchor1.css';
 import light_bulb from '../images/bongden.png';
 import Header from './Header';
 
-const DEADLINE = '10/19/2018';
+const DEADLINE = '10/20/2018';
 
 class App extends Component {
   constructor(props) {
