@@ -1,0 +1,29 @@
+.fixed_header {
+  position: fixed;
+  width: 100%;
+}
+
+.fixed_header img {
+  height: 7vh;
+  position: absolute;
+  top: 2vh;
+  left: 5vw;
+}
+
+.header_btn {
+  height: 3vw;
+  width: 12vw;
+  font-size: 2vw;
+  border-radius: 50px;
+  transition: 0.5s;
+  background-size: 200% auto;
+  background-image: linear-gradient(to right, #f9d832, #ffffff, #f6d365 100%);
+  position: absolute;
+  top: 4vh;
+  right: 5vw;
+}
+
+.header_btn:hover {
+  cursor: pointer;
+  background-position: right;
+}
