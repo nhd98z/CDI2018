@@ -14,6 +14,7 @@ body {
 }
 
 .timeline {
+    position: relative;
     background-color: white;
     min-height: 100vh;
 } 
