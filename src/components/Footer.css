@@ -1,0 +1,17 @@
+.footer {
+  width: 100vw;
+  height: 64px;
+  position: fixed;
+  z-index: 999;
+  bottom: 0;
+  background-image: url('../images/Background.png');
+  background-size: cover;
+  text-align: center;
+}
+
+.footer p {
+  margin: 0;
+  padding: 0;
+  color: #ffffff;
+  font-size: 14px;
+}
