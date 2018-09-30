@@ -17,6 +17,7 @@
   background: url('../images/Background.png');
   background-size: cover;
   height: 100vh;
+  position: relative;
 }
 
 .ac6_title {
@@ -39,12 +40,27 @@
   color: #ffffff;
 }
 
+.ac6 > div:nth-child(1) {
+  animation-delay: 0s;
+}
+
+.ac6 > div:nth-child(2) {
+  animation-delay: 0.25s;
+}
+
+.ac6 > div:nth-child(3) {
+  animation-delay: 0.5s;
+}
+
 .ac6 > div {
   margin-top: 30vh;
   width: 25vw;
   height: 50vh;
   /* background: red; */
   text-align: center;
+  animation: botup 0.5s linear;
+  opacity: 0;
+  animation-fill-mode: forwards;
 }
 
 .ac6 img {
