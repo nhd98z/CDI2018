@@ -40,15 +40,15 @@
   color: #ffffff;
 }
 
-.ac6 > div:nth-child(1) {
+.ac6_animate > div:nth-child(1) {
   animation-delay: 0s;
 }
 
-.ac6 > div:nth-child(2) {
+.ac6_animate > div:nth-child(2) {
   animation-delay: 0.25s;
 }
 
-.ac6 > div:nth-child(3) {
+.ac6_animate > div:nth-child(3) {
   animation-delay: 0.5s;
 }
 
@@ -58,6 +58,9 @@
   height: 50vh;
   /* background: red; */
   text-align: center;
+}
+
+.ac6_animate > div {
   animation: botup 0.5s linear;
   opacity: 0;
   animation-fill-mode: forwards;
