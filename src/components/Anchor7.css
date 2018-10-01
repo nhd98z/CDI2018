@@ -16,6 +16,7 @@
 .sp-content {
     margin-left: 10vw;
     margin-top: 20vh;
+    min-height: 100vh;
     /* border: 1px black solid; */
 }
 
