@@ -112,7 +112,7 @@ export default class Award extends Component {
       <div id="anchor3" className="award col-md-12">
         <div key={this.props.onView} className="row mt-0 ">
           <div className="col-md-1" />
-          <div className="award-brand col-md-10 row fade-in-top">
+          <div className={window.location.hash==="#award"?"award-brand col-md-10 row fade-in-top" : "award-brand col-md-10 row"} >
             <p style={{ borderBottom: "3px solid" }}>GIẢI THƯỞNG</p>
           </div>
           <div className="col-md-1" />
@@ -136,7 +136,7 @@ export default class Award extends Component {
                     style={this.state.firstActive ? { opacity: "0.5" } : {}}
                     onClick={() => this.firstPrize()}
                   >
-                    <div className="prize-sumary text-center fade-in-top">
+                    <div className={window.location.hash==="#award"?"prize-sumary text-center fade-in-top": "prize-sumary text-center"}>
                       <div className="prize-sumary-title">GIẢI NHẤT</div>
                       <div className="prize-sumary-money">
                         56,000,000 <span style={{ fontSize: "2vh" }}>VND</span>{" "}
@@ -148,7 +148,7 @@ export default class Award extends Component {
                     style={this.state.secondActive ? { opacity: "0.5" } : {}}
                     onClick={() => this.secondPrize()}
                   >
-                    <div className="prize-sumary text-center fade-in-top">
+                    <div className={window.location.hash==="#award"?"prize-sumary text-center fade-in-top":"prize-sumary text-center"}>
                       <div className="prize-sumary-title">GIẢI NHÌ</div>
                       <div className="prize-sumary-money">
                         32,000,000 <span style={{ fontSize: "2vh" }}>VND</span>{" "}
@@ -160,7 +160,7 @@ export default class Award extends Component {
                     style={this.state.thirdActive ? { opacity: "0.5" } : {}}
                     onClick={() => this.thirdPrize()}
                   >
-                    <div className="prize-sumary text-center fade-in-top">
+                    <div className={window.location.hash==="#award"?"prize-sumary text-center fade-in-top":"prize-sumary text-center"}>
                       <div className="prize-sumary-title">2 GIẢI BA</div>
                       <div className="prize-sumary-money">
                         15,000,000 <span style={{ fontSize: "2vh" }}>VND</span>{" "}
@@ -185,7 +185,7 @@ export default class Award extends Component {
                     }}
                     alt=""
                   />
-                  <div className="col-md-12 m-auto fade-in-right">
+                  <div className={window.location.hash==="#award"?"col-md-12 m-auto fade-in-right":"col-md-12 m-auto"}>
                     {this.state.cash}{" "}
                     <span style={{ fontSize: "2vh" }}>VND</span> <br />
                     <span
@@ -209,7 +209,7 @@ export default class Award extends Component {
                     }}
                     alt=""
                   />
-                  <div className="col-md-12 m-auto fade-in-right">
+                  <div className={window.location.hash==="#award"?"col-md-12 m-auto fade-in-right":"col-md-12 m-auto"}>
                     {this.state.techkidScholarship}{" "}
                     <span style={{ fontSize: "2vh" }}>VND</span>
                     <br />
@@ -236,7 +236,7 @@ export default class Award extends Component {
                     }}
                     alt=""
                   />
-                  <div className="col-md-12 m-auto fade-in-right">
+                  <div className={window.location.hash==="#award"?"col-md-12 m-auto fade-in-right":"col-md-12 m-auto"}>
                     {this.state.topcvAccount}{" "}
                     <span style={{ fontSize: "2vh" }}>VND</span> <br />
                     <span
@@ -260,7 +260,7 @@ export default class Award extends Component {
                     }}
                     alt=""
                   />
-                  <div className="col-md-12 m-auto fade-in-right">
+                  <div className={window.location.hash==="#award"?"col-md-12 m-auto fade-in-right":"col-md-12 m-auto fade-in-right"}>
                     {this.state.topcvScholarship}{" "}
                     <span style={{ fontSize: "2vh" }}>VND</span> <br />
                     <span
@@ -291,7 +291,7 @@ export default class Award extends Component {
 class AwardSumary extends Component {
   render() {
     return (
-      <div className="award-sumary fade-in-top">
+      <div className={window.location.hash==="#award"?"award-sumary fade-in-top":"award-sumary fade-in-top"}>
         <div className="award-sumary-title">{this.props.sumaryTitle}</div>
         <div className="award-sumary-money">
           {this.props.sumaryMoney}

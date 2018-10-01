@@ -14,12 +14,13 @@ body {
 }
 
 .timeline {
+    position: relative;
     background-color: white;
     min-height: 100vh;
 } 
 
 .tl-title {
-    font-size: 45px;
+    font-size: 7vh;
     font-family: icielBrandonText-Bold;
     border-bottom: 3px solid #f9d832;
     color: #f9d832;
