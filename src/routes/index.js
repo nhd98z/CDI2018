@@ -7,7 +7,6 @@ import Anchor4 from '../components/Anchor4';
 import Anchor6 from '../components/Anchor6';
 import Anchor7 from '../components/Anchor7';
 import Anchor5 from '../components/Anchor5';
-import Anchor7 from '../components/Anchor7';
 
 export default (
   <Router>
@@ -16,13 +15,8 @@ export default (
     <Route path="/2" component={Anchor2} />
     <Route path="/3" component={award} />
     <Route path="/4" component={Anchor4} />
-<<<<<<< HEAD
-    <Route path="/5" component={Anchor5}/>
-    <Route path="/7" component={Anchor7}/>
-=======
     <Route path="/5" component={Anchor5} />
     <Route path="/6" component={Anchor6} />
     <Route path="/7" component={Anchor7} />
->>>>>>> f894bdf42210e771091442c8420a23c86422c892
   </Router>
 );
