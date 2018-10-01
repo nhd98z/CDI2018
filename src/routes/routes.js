@@ -7,7 +7,7 @@ export const home = Loadable({
   loader: () => import('../components/Home'),
   loading: Loading
 });
-export const award = Loadable({
+export const Anchor3 = Loadable({
   loader: () => import('../components/Anchor3'),
   loading: Loading
 });

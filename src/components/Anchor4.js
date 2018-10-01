@@ -13,9 +13,11 @@ export default class Timeline extends Component {
         this.state = {};
     }
 
+    
+
     render() {
         return (
-            <div className="timeline">
+            <div id="anchor4" className="timeline">
                 <div className="tit-timeline">
                     <span className="tl-title">TIMELINE</span>
                 </div>

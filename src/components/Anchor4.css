@@ -98,9 +98,8 @@ body {
 
 .tit-timeline {
     clear: both;
-    position: absolute;
-    right: 10vw;
-    top: 14vh;
+    text-align: right;
+    width:90%;
 }
 
 .phase-1 img,.phase-2 img,.phase-3 img,.phase-4 img,.phase-5 img {
