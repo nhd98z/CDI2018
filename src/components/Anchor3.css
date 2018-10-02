@@ -113,7 +113,7 @@
 @keyframes fadeinTop {
   from {
     opacity: 0;
-    top: -5vh;
+    top: -150px;
   }
   to {
     opacity: 1;
@@ -124,7 +124,7 @@
 @-moz-keyframes fadeinTop {
   from {
     opacity: 0;
-    top: -5vh;
+    top: -150px;
   }
   to {
     opacity: 1;
@@ -136,7 +136,7 @@
 @-webkit-keyframes fadeinTop {
   from {
     opacity: 0;
-    top: -5vh;
+    top: -150px;
   }
   to {
     opacity: 1;
@@ -148,7 +148,7 @@
 @-ms-keyframes fadeinTop {
   from {
     opacity: 0;
-    top: -5vh;
+    top: -150px;
   }
   to {
     opacity: 1;
@@ -160,7 +160,7 @@
 @-o-keyframes fadeinTop {
   from {
     opacity: 0;
-    top: -5vh;
+    top: -150px;
   }
   to {
     opacity: 1;
@@ -184,7 +184,7 @@
 @-moz-keyframes fadeinBottom {
   from {
     opacity: 0;
-    bottom: -50px;
+    bottom: -150px;
   }
   to {
     opacity: 1;
@@ -196,7 +196,7 @@
 @-webkit-keyframes fadeinBottom {
   from {
     opacity: 0;
-    bottom: -50px;
+    bottom: -150px;
   }
   to {
     opacity: 1;
@@ -208,7 +208,7 @@
 @-ms-keyframes fadeinBottom {
   from {
     opacity: 0;
-    bottom: -50px;
+    bottom: -150px;
   }
   to {
     opacity: 1;
@@ -220,7 +220,7 @@
 @-o-keyframes fadeinBottom {
   from {
     opacity: 0;
-    bottom: -50px;
+    bottom: -150px;
   }
   to {
     opacity: 1;
@@ -233,7 +233,7 @@
 @keyframes fadeinRight {
   from {
     opacity: 0;
-    right: -50px;
+    right: -150px;
   }
   to {
     opacity: 1;
@@ -244,7 +244,7 @@
 @-moz-keyframes fadeinRight {
   from {
     opacity: 0;
-    right: -50px;
+    right: -150px;
   }
   to {
     opacity: 1;
@@ -256,7 +256,7 @@
 @-webkit-keyframes fadeinRight {
   from {
     opacity: 0;
-    right: -50px;
+    right: -150px;
   }
   to {
     opacity: 1;
@@ -268,7 +268,7 @@
 @-ms-keyframes fadeinRight {
   from {
     opacity: 0;
-    right: -50px;
+    right: -150px;
   }
   to {
     opacity: 1;
@@ -280,7 +280,7 @@
 @-o-keyframes fadeinRight {
   from {
     opacity: 0;
-    right: -50px;
+    right: -150px;
   }
   to {
     opacity: 1;
@@ -293,7 +293,7 @@
 @keyframes fadeinLeft {
   from {
     opacity: 0;
-    left: -50px;
+    left: -150px;
   }
   to {
     opacity: 1;
@@ -304,7 +304,7 @@
 @-moz-keyframes fadeinLeft {
   from {
     opacity: 0;
-    left: -50px;
+    left: -150px;
   }
   to {
     opacity: 1;
@@ -316,7 +316,7 @@
 @-webkit-keyframes fadeinLeft {
   from {
     opacity: 0;
-    left: -50px;
+    left: -150px;
   }
   to {
     opacity: 1;
@@ -328,7 +328,7 @@
 @-ms-keyframes fadeinLeft {
   from {
     opacity: 0;
-    left: -50px;
+    left: -150px;
   }
   to {
     opacity: 1;
@@ -340,7 +340,7 @@
 @-o-keyframes fadeinLeft {
   from {
     opacity: 0;
-    left: -50px;
+    left: -150px;
   }
   to {
     opacity: 1;

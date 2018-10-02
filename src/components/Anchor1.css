@@ -23,7 +23,7 @@
 .fa_background {
   background: url('../images/Background.png');
   background-size: cover;
-  height: 100vh;
+  height: 100vh !important;
 }
 
 .fa {

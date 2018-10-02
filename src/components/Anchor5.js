@@ -30,11 +30,11 @@ export default class MyClub extends Component {
                     </div>
                     <br />
                     <br />
-                    <p className="ani-p">
+                    <p className={window.location.hash==="#about"?"ani-p":""}>
                       JS Club - Câu lạc bộ Kỹ sư Nhật Bản thuộc trường Đại học FPT được thành lập vào ngày 24.02.2013. Sứ mệnh của chúng tôi là đào tạo nên
                       những kỹ sư Nhật Bản chất lượng về cả chuyên môn cũng như phẩm chất.
                         </p>
-                    <p className="ani-p">JS Club đã 3 lần được vinh danh là Câu lạc bộ Xuất sắc của trường về lĩnh vực học tập.</p>
+                    <p className={window.location.hash==="#about"?"ani-p":""}>JS Club đã 3 lần được vinh danh là Câu lạc bộ Xuất sắc của trường về lĩnh vực học tập.</p>
                     <div className="cl-logos">
                       <a className="cl-fix-a" href="https://www.facebook.com/fu.jsclub" target="_blank" rel="noopener noreferrer">
                         <img src={Logo} alt="logos" width="20%" />

@@ -22,7 +22,7 @@ export default class Anchor7 extends Component {
             <span>đối tác</span>
           </div> */}
           <br />
-          <div className="sp-gold">
+          <div className={window.location.hash==="#partners"?"sp-gold":""}>
             <span>Nhà tài trợ Vàng</span>
             <br />
             <a href="https://rikkeisoft.com/" className="fix-margin-a" target="_blank" rel="noopener noreferrer">
@@ -30,7 +30,7 @@ export default class Anchor7 extends Component {
             </a>
           </div>
 
-          <div className="sp-silver">
+          <div className={window.location.hash==="#partners"?"sp-silver":" "}>
             <span>Nhà tài trợ Bạc</span>
             <br />
             <a href="https://vietis.com.vn/" className="fix-vietis" target="_blank" rel="noopener noreferrer">
@@ -41,7 +41,7 @@ export default class Anchor7 extends Component {
             </a>
           </div>
 
-          <div className="sp-bronze">
+          <div className={window.location.hash==="#partners"?"sp-bronze ":""}>
             <span>Nhà tài trợ Đồng</span>
             <br />
             <a href="https://vti.com.vn/" target="_blank" className="fix-margin-a" rel="noopener noreferrer">

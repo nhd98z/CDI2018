@@ -117,10 +117,10 @@ export default class Award extends Component {
           </div>
           <div className="col-md-1" />
           <div className="col-md-1" />
-          <div key={this.state.key} className="award-content col-md-10 row">
+          <div className="award-content col-md-10 row">
             <div className="award-content-left col-md-6 ">
               <div className="row">
-                <AwardSumary
+                <AwardSumary  key={this.state.key}
                   sumaryMoney={this.state.sumaryMoney}
                   sumaryTitle={this.state.sumaryTitle}
                 />
@@ -185,7 +185,7 @@ export default class Award extends Component {
                     }}
                     alt=""
                   />
-                  <div className={window.location.hash==="#award"?"col-md-12 m-auto fade-in-right":"col-md-12 m-auto"}>
+                  <div key={this.state.key} className={window.location.hash==="#award"?"col-md-12 m-auto fade-in-right":"col-md-12 m-auto"}>
                     {this.state.cash}{" "}
                     <span style={{ fontSize: "2vh" }}>VND</span> <br />
                     <span
@@ -209,7 +209,7 @@ export default class Award extends Component {
                     }}
                     alt=""
                   />
-                  <div className={window.location.hash==="#award"?"col-md-12 m-auto fade-in-right":"col-md-12 m-auto"}>
+                  <div  key={this.state.key} className={window.location.hash==="#award"?"col-md-12 m-auto fade-in-right":"col-md-12 m-auto"}>
                     {this.state.techkidScholarship}{" "}
                     <span style={{ fontSize: "2vh" }}>VND</span>
                     <br />
@@ -236,7 +236,7 @@ export default class Award extends Component {
                     }}
                     alt=""
                   />
-                  <div className={window.location.hash==="#award"?"col-md-12 m-auto fade-in-right":"col-md-12 m-auto"}>
+                  <div  key={this.state.key} className={window.location.hash==="#award"?"col-md-12 m-auto fade-in-right":"col-md-12 m-auto"}>
                     {this.state.topcvAccount}{" "}
                     <span style={{ fontSize: "2vh" }}>VND</span> <br />
                     <span
@@ -260,7 +260,7 @@ export default class Award extends Component {
                     }}
                     alt=""
                   />
-                  <div className={window.location.hash==="#award"?"col-md-12 m-auto fade-in-right":"col-md-12 m-auto fade-in-right"}>
+                  <div  key={this.state.key} className={window.location.hash==="#award"?"col-md-12 m-auto fade-in-right":"col-md-12 m-auto "}>
                     {this.state.topcvScholarship}{" "}
                     <span style={{ fontSize: "2vh" }}>VND</span> <br />
                     <span

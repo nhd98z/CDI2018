@@ -8,7 +8,7 @@ class Anchor6 extends React.Component {
     return (
       <aside id="anchor6" className="ac6_wrap">
         <h1 className="ac6_title">Ban giám khảo</h1>
-        <div className="ac6 ac6_animate">
+        <div className={window.location.hash==="#examiners"?"ac6 ac6_animate":"ac6"}>
           <div>
             <img src={ava} alt="ava" />
             <div className="ac6_content">
