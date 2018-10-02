@@ -9,6 +9,7 @@ import Anchor5 from '../components/Anchor5';
 import Anchor6 from '../components/Anchor6';
 import Anchor7 from '../components/Anchor7';
 
+
 export default (
   <Router>
     <Route path="/" component={home} />

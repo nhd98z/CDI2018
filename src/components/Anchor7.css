@@ -15,16 +15,9 @@
 
 .sp-content {
     margin-left: 10vw;
-    margin-top: 20vh;
-    min-height: 100vh;
+    margin-top: 15vh;
+    min-height: 85vh;
     /* border: 1px black solid; */
-}
-
-.sp-div-title {
-    animation: text-move 0.3s;
-    animation-delay: 0s;
-    opacity: 0;
-    animation-fill-mode: forwards;
 }
 
 .sp-div-title > span {
@@ -35,24 +28,10 @@
     border-bottom: #f9d832 solid 0.3vw;
 }
 
-.sp-silver {
-    animation: text-move 0.3s;
-    animation-delay: 0.3s;
-    opacity: 0;
-    animation-fill-mode: forwards;
-}
-
-.sp-silver > span {
+.sp-silver > span, .sp-gold > span {
     font-family: effraFont;
     color: black;
     font-size: 4vh;
-}
-
-.sp-bronze {
-    animation: text-move 0.3s;
-    animation-delay: 0.6s;
-    opacity: 0;
-    animation-fill-mode: forwards;
 }
 
 .sp-bronze > span {
@@ -61,16 +40,28 @@
     font-size: 4vh;
 }
 
-.sp-silver > a, .sp-bronze > a {
-    margin-left: 8vh;
+.sp-silver > a, .sp-bronze > a, .sp-gold > a {
+    margin-left: 5vw;
+}
+
+.fix-vietis {
+    margin-left: 1vw !important;
+}
+
+.fix-topcv {
+    margin-left: 4vw !important;
 }
 
 .fix-margin-a {
     margin-left: 0 !important;
 }
 
-.fix-topcv {
-    margin-top: 5vh !important;
+.sp-silver > a:hover, .sp-bronze > a:hover, .sp-gold > a:hover {
+    animation: a-faded 0.25s;
+}
+
+.sp-bronze > a > img {
+    margin-top: 2vh;
 }
 
 @keyframes a-faded {
@@ -93,10 +84,23 @@
     }
 }
 
-.sp-silver > a:hover, .sp-bronze > a:hover {
-    animation: a-faded 0.25s;
+.sp-silver {
+    animation: text-move 0.3s;
+    animation-delay: 0.6s;
+    opacity: 0;
+    animation-fill-mode: forwards;
 }
 
-.sp-bronze > a > img {
-    margin-top: 2vh;
+.sp-bronze {
+    animation: text-move 0.3s;
+    animation-delay: 0.9s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+}
+
+.sp-gold {
+    animation: text-move 0.3s;
+    animation-delay: 0.3s;
+    opacity: 0;
+    animation-fill-mode: forwards;
 }

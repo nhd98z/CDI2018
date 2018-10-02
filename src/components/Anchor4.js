@@ -18,13 +18,12 @@ export default class Timeline extends Component {
       <div>
         <div id="anchor4" className="timeline">
           <div className="tit-timeline">
-            <span className="tl-title">TIMELINE</span>
+              <span className="tl-title">TIMELINE</span>
           </div>
-
           <div className="row fix-col">
             <div className="col-md-1 fix-col" />
             <div className="col-md-2 fix-col">
-              <div className="phase-1">
+              <div className="phase-1 ani-phase1">
                 <div className="in4-phase">
                   <span className="text-in-phase">Nhận đơn</span> <br />
                   <span className="text-in-phase">đăng kí</span> <br />
@@ -35,7 +34,7 @@ export default class Timeline extends Component {
               </div>
             </div>
             <div className="col-md-2 fix-col">
-              <div className="phase-2">
+              <div className="phase-2 ani-phase2">
                 <div className="in4-phase">
                   <span className="text-in-phase">Hoàn thiện &</span> <br />
                   <span className="text-in-phase">nộp sản phẩm</span> <br />
@@ -46,7 +45,7 @@ export default class Timeline extends Component {
               </div>
             </div>
             <div className="col-md-2 fix-col">
-              <div className="phase-3">
+              <div className="phase-3 ani-phase3">
                 <div className="in4-phase">
                   <span className="text-in-phase">Sơ loại</span> <br />
                   <span className="text-in-phase">vòng 2</span> <br />
@@ -57,7 +56,7 @@ export default class Timeline extends Component {
               </div>
             </div>
             <div className="col-md-2 fix-col">
-              <div className="phase-4">
+              <div className="phase-4 ani-phase4">
                 <div className="in4-phase">
                   <span className="text-in-phase">Hoàn thiện</span> <br />
                   <span className="text-in-phase">sản phẩm</span> <br />
@@ -68,7 +67,7 @@ export default class Timeline extends Component {
               </div>
             </div>
             <div className="col-md-2 fix-col">
-              <div className="phase-5">
+              <div className="phase-5 ani-phase5">
                 <div className="in4-phase">
                   <span className="text-in-phase">Đêm</span> <br />
                   <span className="text-in-phase">Chung kết</span> <br />

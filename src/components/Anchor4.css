@@ -16,7 +16,7 @@ body {
 .timeline {
     position: relative;
     background-color: white;
-    min-height: 100vh;
+    min-height: 90vh;
 } 
 
 .tl-title {
@@ -53,54 +53,40 @@ body {
 
 .phase-1 {
     z-index: 1;
-    margin-top: 22vh;
-    animation: phase1-move 1s;
-    animation-delay: 0s;
-    opacity: 0;
-    animation-fill-mode: forwards;
+    margin-top: 3vh;
+    
 }
 
 .phase-2 {
     z-index: 2;
-    margin-top: 29vh;
-    animation: phase2-move 1s;
-    animation-delay: 0.4s;
-    opacity: 0;
-    animation-fill-mode: forwards;
+    margin-top: 10vh;
+
 }
 
 .phase-3 {
     z-index: 3;
-    margin-top: 34vh;
-    animation: phase3-move 1s;
-    animation-delay: 0.8s;
-    opacity: 0;
-    animation-fill-mode: forwards;
+    margin-top: 14vh;
+    
 }
 
 .phase-4 {
     z-index: 4;
-    margin-top: 42vh;
-    animation: phase4-move 1s;
-    animation-delay: 1.2s;
-    opacity: 0;
-    animation-fill-mode: forwards;
+    margin-top: 22vh;
+    
 }
 
 .phase-5 {
     z-index: 5;
-    margin-top: 42vh;
+    margin-top: 24vh;
     text-align: center;
-    animation: phase5-move 1s;
-    animation-delay: 1.6s;
-    opacity: 0;
-    animation-fill-mode: forwards;
+    
 }
 
 .tit-timeline {
     clear: both;
     text-align: right;
     width:90%;
+    margin-top: 10vh;
 }
 
 .phase-1 img,.phase-2 img,.phase-3 img,.phase-4 img,.phase-5 img {
@@ -160,4 +146,39 @@ body {
         opacity: 1;
         transform: translate3d(0, 0, 0);
     }
+}
+
+.ani-phase1 {
+    animation: phase1-move 1s;
+    animation-delay: 0s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+}
+
+.ani-phase2 {
+    animation: phase2-move 1s;
+    animation-delay: 0.4s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+}
+
+.ani-phase3 {
+    animation: phase3-move 1s;
+    animation-delay: 0.8s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+}
+
+.ani-phase4 {
+    animation: phase4-move 1s;
+    animation-delay: 1.2s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+}
+
+.ani-phase5 {
+    animation: phase5-move 1s;
+    animation-delay: 1.6s;
+    opacity: 0;
+    animation-fill-mode: forwards;
 }
