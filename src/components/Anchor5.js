@@ -25,7 +25,7 @@ export default class MyClub extends Component {
               <div className="cl-content-wrapper">
                 <div className="cl-wrp">
                   <div className="in4-js">
-                    <div className="cl-div-title">
+                    <div className={window.location.hash==="#about"?"cl-div-title":""}>
                       <span className="cl-title">Về ban tổ chức</span>
                     </div>
                     <br />
@@ -35,7 +35,7 @@ export default class MyClub extends Component {
                       những kỹ sư Nhật Bản chất lượng về cả chuyên môn cũng như phẩm chất.
                         </p>
                     <p className={window.location.hash==="#about"?"ani-p":""}>JS Club đã 3 lần được vinh danh là Câu lạc bộ Xuất sắc của trường về lĩnh vực học tập.</p>
-                    <div className="cl-logos">
+                    <div className={window.location.hash==="#about"?"cl-logos":""}>
                       <a className="cl-fix-a" href="https://www.facebook.com/fu.jsclub" target="_blank" rel="noopener noreferrer">
                         <img src={Logo} alt="logos" width="20%" />
                       </a>

@@ -74,13 +74,16 @@ class App extends Component {
                 Giờ&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 Phút&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Giây
               </h3>
+              <a href="http://bit.ly/CDI18_Maudondangky" target="__blank">
               <input
                 type="button"
                 className={window.location.hash==="#home"?"fa_btn fa_btn_animate":"fa_btn"}
                 value="ĐĂNG KÝ NGAY"
+
                 onMouseEnter={this.handleMouse}
                 onMouseLeave={this.handleMouse}
               />
+              </a>
             </div>
           </div>
         </div>
