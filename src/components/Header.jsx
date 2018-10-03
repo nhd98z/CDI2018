@@ -7,10 +7,10 @@ class Header extends Component {
   render() {
     return (
       <div className="fixed_header">
-        <a href="/1">
+        <a href="/#home">
           <img src={logo} alt="logo" />
         </a>
-        {this.props.showBtn ? <input type="button" className="header_btn" value="ĐĂNG KÝ" /> : <div />}
+        {window.location.hash==="#home" ? <input type="button" className="header_btn" value="ĐĂNG KÝ" /> : <div />}
       </div>
     );
   }

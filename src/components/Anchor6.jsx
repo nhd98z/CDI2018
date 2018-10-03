@@ -1,7 +1,7 @@
 import React from 'react';
-
 import './Anchor6.css';
 import ava from '../images/avatar.jpg';
+import Footer from "./Footer";
 
 class Anchor6 extends React.Component {
   render() {
@@ -42,7 +42,9 @@ class Anchor6 extends React.Component {
               <h5>TOP 01 Vietnam StackOverFlow</h5>
             </div>
           </div>
+          
         </div>
+        <Footer/>
       </aside>
     );
   }

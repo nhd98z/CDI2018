@@ -4,7 +4,7 @@ import './Footer.css';
 
 class Footer extends React.Component {
   render() {
-    return <aside className="footer">
+    return <div className="footer">
         <p>© 2018 Coding Inspiration</p>
         <p>Địa chỉ: Đại học FPT, Hòa Lạc, Hà Nội</p>
         <p>
@@ -12,7 +12,7 @@ class Footer extends React.Component {
             Mail
           </a> | <a href="tel:01647520088">Phone</a>
         </p>
-      </aside>;
+      </div>;
   }
 }
 

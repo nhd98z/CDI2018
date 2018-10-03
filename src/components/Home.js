@@ -8,48 +8,60 @@ import Anchor6 from "./Anchor6";
 import Anchor7 from "./Anchor7";
 import Header from "./Header";
 import Footer from "./Footer";
-import ReactFullpage from '@fullpage/react-fullpage';
+import ReactFullpage from "@fullpage/react-fullpage";
 
 export default class Home extends Component {
-
   render() {
     return (
+      <div><Header />
       <ReactFullpage
-      anchors={['home', 'intro', 'award', 'timeline', 'about', 'partners', 'examiners']}
-      navigation="true"
-    render={({ state, fullpageApi }) => {
-      return (
-        <div>
+        anchors={[
+          "home",
+          "intro",
+          "award",
+          "timeline",
+          "about",
+          "partners",
+          "examiners"
+        ]}
+        navigation="true"
+        render={({ state, fullpageApi }) => {
+          return (
+            <div>
+              
 
-          <Header />
-          <div id="fullpage">
-            <div className="section">
-              <Anchor1 />
+              <div id="fullpage">
+                <div className="section">
+                  <Anchor1 />
+                </div>
+                <div className="section">
+                  <Anchor2 />
+                </div>
+                <div className="section">
+                  <Anchor3 />
+                </div>
+                <div className="section">
+                  <Anchor4 />
+                </div>
+                <div className="section">
+                  <Anchor5 />
+                </div>
+                <div className="section">
+                  <Anchor7 />
+                  
+                </div>
+                <div className="section">
+                  <Anchor6 />
+                  <Footer/>
+                </div>
+                
+              </div>
+
             </div>
-            <div className="section">
-              <Anchor2 />
-            </div>
-            <div className="section">
-              <Anchor3 />
-            </div>
-            <div className="section">
-              <Anchor4 />
-            </div>
-            <div className="section">
-              <Anchor5 />
-            </div>
-            <div className="section">
-              <Anchor7 />
-            </div>
-            <div className="section">
-              <Anchor6 />
-            </div>
-          </div>
-          <Footer />
-          </div>
-      );
-    }}
-  />
+          );
+        }}
+      />
+      </div>
     );
   }
 }
