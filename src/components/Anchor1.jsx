@@ -56,8 +56,8 @@ class App extends Component {
               <h2 className={window.location.hash === '#home' ? 'fa_vsl fa_vsl_animate' : 'fa_vsl '}>Vòng sơ loại</h2>
               <h1 className={window.location.hash === '#home' ? 'fa_nyt fa_nyt_animate' : 'fa_nyt '}>Nộp ý tưởng</h1>
               <p className="fa_lorem fa_lorem_animate">
-                Dưới con mắt của chúng tôi, mỗi lập trình viên là một tài năng. Họ đều có điểm chung là xuất phát từ đam mê, đi lên bằng khổ luyện, và
-                tỏa sáng bằng tài năng và trí tuệ tuyệt vời. Và chúng tôi tin rằng, '<span>Coding Inspiration 2018</span>' chính là sân chơi đáng giá
+                Dưới con mắt của chúng tôi, mỗi lập trình viên là một tài năng. Họ đều có điểm chung là xuất phát từ đam mê, đi lên bằng khổ luyện,
+                tỏa sáng bằng tài năng và trí tuệ tuyệt vời. Chúng tôi tin rằng, '<span>Coding Inspiration 2018</span>' chính là sân chơi đáng giá
                 dành cho những coder trẻ luôn khao khát được tỏa sáng, được cháy hết mình với đam mê.
               </p>
               <h1 className={window.location.hash === '#home' ? 'fa_number fa_number_animate' : 'fa_number'}>
