@@ -10,7 +10,7 @@ class Header extends Component {
         <a href="/#home">
           <img src={logo} alt="logo" />
         </a>
-        {window.location.hash==="#home" ? <a href="http://bit.ly/CDI18_Maudondangky" target="__blank"><input type="button" className="header_btn" value="ĐĂNG KÝ" /></a> : <div />}
+        {window.location.hash!=="#home" ? <a href="http://bit.ly/CDI18_Maudondangky" target="__blank"><input type="button" className="header_btn" value="ĐĂNG KÝ" /></a> : <div />}
       </div>
     );
   }
