@@ -4,8 +4,10 @@
   right: 0;
   bottom: 0;
   left: 0;
-  background-image: url('../images/Background.png');
+  /* background-image: url('../images/Background.png');
   background-size: cover;
+  background-position: bottom; */
+  background-color: #000;
   text-align: center;
   display: block;
 }
