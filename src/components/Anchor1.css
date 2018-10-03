@@ -72,7 +72,7 @@
 .fa_number,
 .fa_number > span {
   font-size: 6vw;
-  /* margin-top: 1vh; */
+  margin-top: -3vh;
   font-family: festerFont;
 }
 
@@ -107,6 +107,7 @@
 }
 
 .fa_ngaygio {
+  margin-top: -3vh;
   margin-left: 0.25vw;
   font-size: 1.5vw;
 }
@@ -118,10 +119,10 @@
 }
 
 .fa_lorem {
-  margin-top: 2vh;
+  margin-top: 0vh;
   font-size: 1.25vw;
   font-family: effraFont;
-  line-height: 2vw !important;
+  line-height: 1.75vw !important;
 }
 
 .fa_lorem_animate {
@@ -132,10 +133,10 @@
 }
 
 .fa_btn {
-  height: 5vw;
-  width: 20vw;
+  height: 4vw;
+  width: 18vw;
+  margin-right: 3vw;
   font-size: 2vw;
-  margin-top: 2vh;
   border-radius: 50px;
   transition: 0.5s;
   background-size: 200% auto;
