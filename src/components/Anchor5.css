@@ -81,12 +81,12 @@
 }
 
 .cl-logos > a:hover {
-    animation: a-faded 0.25s;
+    animation: a-faded 1s;
 }
 
 @keyframes a-faded {
     from {
-        opacity: 0;
+        opacity: 0.6;
     }
     to {
         opacity: 1;

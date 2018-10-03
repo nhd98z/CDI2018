@@ -14,7 +14,7 @@
 }
 
 .sp-content {
-    margin-left: 10vw;
+    margin-left: 20vw;
     margin-top: 15vh;
     min-height: 85vh;
     /* border: 1px black solid; */
@@ -57,7 +57,7 @@
 }
 
 .sp-silver > a:hover, .sp-bronze > a:hover, .sp-gold > a:hover {
-    animation: a-faded 0.25s;
+    animation: a-faded 1s;
 }
 
 .sp-bronze > a > img {
@@ -66,7 +66,7 @@
 
 @keyframes a-faded {
     from {
-        opacity: 0;
+        opacity: 0.6;
     }
     to {
         opacity: 1;
