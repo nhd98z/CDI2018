@@ -30,10 +30,10 @@ class App extends Component {
   getTimeUtil(deadline) {
     const time = Date.parse(deadline) - new Date().getTime();
     // console.log('time', time);
-    const seconds = Math.floor((time / 1000) % 60);
-    const minutes = Math.floor((time / 1000 / 60) % 60);
-    const hours = Math.floor((time / (1000 * 60 * 60)) % 24);
-    const days = Math.floor(time / (1000 * 60 * 60 * 24));
+    const seconds = Math.max(Math.floor((time / 1000) % 60), 0);
+    const minutes = Math.max(Math.floor((time / 1000 / 60) % 60), 0);
+    const hours = Math.max(Math.floor((time / (1000 * 60 * 60)) % 24), 0);
+    const days = Math.max(Math.floor(time / (1000 * 60 * 60 * 24)), 0);
 
     // console.log('seconds', seconds, 'minutes', minutes, 'hours', hours, 'days', days);
     this.setState({ days, hours, minutes, seconds });
