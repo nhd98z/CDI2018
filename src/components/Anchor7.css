@@ -13,17 +13,34 @@
     padding: 0;
 }
 
+.fix-pad-mar {
+    padding: 0;
+    margin: 0;
+    /* width: 100%; */
+    /* vertical-align: middle; */
+}
+
 .sp-content {
-    margin-left: 20vw;
+    margin-left: 15vw;
     margin-top: 15vh;
     min-height: 85vh;
     /* border: 1px black solid; */
 }
 
+.sp-div-title {
+    -ms-transform: rotate(-90deg); /* IE 9 */
+    -webkit-transform: rotate(-90deg); /* Safari 3-8 */
+    transform: rotate(-90deg);
+    margin-top: 40vh;
+    margin-right: 20vw;
+    /* transform-origin: center right; */
+}
+
+
 .sp-div-title > span {
     color: #f9d832;
     font-family: brandonFont;
-    font-size: 7vh;
+    font-size: 6vh;
     text-transform: uppercase;
     border-bottom: #f9d832 solid 0.3vw;
 }

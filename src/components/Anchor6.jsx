@@ -25,7 +25,7 @@ class Anchor6 extends React.Component {
             </div>
           </div>
           <div>
-            <a href="http://avavt.github.io/" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.youtube.com/user/duydt" target="_blank" rel="noopener noreferrer">
               <img src={ava2} alt="ava2" />
             </a>
             <div className="ac6_content">
