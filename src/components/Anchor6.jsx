@@ -12,7 +12,9 @@ class Anchor6 extends React.Component {
         <h1 className="ac6_title">Ban cố vấn</h1>
         <div className={window.location.hash === '#examiners' ? 'ac6 ac6_animate' : 'ac6'}>
           <div>
-            <img src={ava1} alt="ava" />
+            <a href="http://avavt.github.io/" target="_blank" rel="noopener noreferrer">
+              <img src={ava1} alt="ava1" />
+            </a>
             <div className="ac6_content">
               <h4>
                 Anh
@@ -23,7 +25,9 @@ class Anchor6 extends React.Component {
             </div>
           </div>
           <div>
-            <img src={ava2} alt="ava" />
+            <a href="http://avavt.github.io/" target="_blank" rel="noopener noreferrer">
+              <img src={ava2} alt="ava2" />
+            </a>
             <div className="ac6_content">
               <h4>
                 Thầy
@@ -34,14 +38,16 @@ class Anchor6 extends React.Component {
             </div>
           </div>
           <div>
-            <img src={ava3} alt="ava" />
+            <a href="https://thangdn.com/" target="_blank" rel="noopener noreferrer">
+              <img src={ava3} alt="ava3" />
+            </a>
             <div className="ac6_content">
               <h4>
-                Thầy
-                <span> Chu Xuân Luyện</span>
+                Anh
+                <span> Nguyễn Đức Thắng</span>
               </h4>
-              <h5 className="ac6_content_first">Giảng viên bộ môn lập trình</h5>
-              <h5>Đại học FPT</h5>
+              <h5 className="ac6_content_first">Chủ nhiệm CLB Công nghệ thông tin</h5>
+              <h5>Đại học Thăng Long</h5>
             </div>
           </div>
         </div>
