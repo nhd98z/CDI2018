@@ -37,13 +37,13 @@ export default class MyClub extends Component {
                     <p className={window.location.hash==="#about"?"ani-p":""}>JS Club đã nhiều lần được vinh danh là Câu lạc bộ Xuất sắc của trường về lĩnh vực học tập.</p>
                     <div className={window.location.hash==="#about"?"cl-logos":""}>
                       <a className="cl-fix-a" href="https://www.facebook.com/fu.jsclub" target="_blank" rel="noopener noreferrer">
-                        <img src={Logo} alt="logos" width="20%" />
+                        <img src={Logo} alt="logos" width="17%" />
                       </a>
                       <a href="http://daihoc.fpt.edu.vn/" target="_blank" rel="noopener noreferrer">
-                        <img src={FU} alt="logos" width="37%" />
+                        <img src={FU} alt="logos" width="36%" />
                       </a>
                       <a href="http://daihoc.fpt.edu.vn/" target="_blank" rel="noopener noreferrer">
-                        <img src={PDP} alt="logos" width="37%" />
+                        <img src={PDP} alt="logos" width="42%" />
                       </a>
                     </div>
                   </div>
