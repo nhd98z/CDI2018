@@ -46,7 +46,7 @@ class Anchor6 extends React.Component {
                 Anh
                 <span> Nguyễn Đức Thắng</span>
               </h4>
-              <h5 className="ac6_content_first">Chủ nhiệm CLB Công nghệ thông tin</h5>
+              <h5 className="ac6_content_first">Giảng viên Khoa học máy tính</h5>
               <h5>Đại học Thăng Long</h5>
             </div>
           </div>
